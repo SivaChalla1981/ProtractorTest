@@ -1,6 +1,8 @@
 exports.config = {
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  //seleniumAddress: 'http://localhost:4444/wd/hub',
   allScriptsTimeout: 10000,
+  directConnect : true,
+  SELENIUM_PROMISE_MANAGER: false,
 
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),
